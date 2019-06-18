@@ -1,0 +1,66 @@
+body, div, p, input, h1, h2, h3, h4, h5, h6, ol, ul, li, dl, dt, dd, form, button, select, textarea,article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  vertical-align: middle;
+  font-weight: normal;
+}
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  color: #333;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  font: normal 14px/160% arial, helvetica, "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", sans-serif;
+  text-align: left;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 100%;
+}
+html,body{
+  min-width: 1200px;
+  overflow: auto;
+  width: 100%
+}
+/*去除input属性type=number时候后面的额上下小尾巴*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+.el-input__inner {
+  line-height: 0px!important;
+}
+#app{
+  padding: 80px 32px 50px;
+  background: #fff;
+  height: 100%;
+}
+#app .title{
+  font-size: 24px;
+  text-align: center;
+  margin-bottom:60px;
+}
+.demo-ruleForm{
+  width: 500px;
+  margin: 0 auto;
+}
+.demo-ruleForm /deep/ .el-radio-group{
+  line-height: 32px;
+}
+.demo-ruleForm /deep/ .el-radio{
+  vertical-align: middle;
+}
+/* vue */
+[v-cloak] {
+  display: none;
+}
